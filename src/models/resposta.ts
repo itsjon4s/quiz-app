@@ -33,6 +33,10 @@ export default class RespostaModel {
     return new RespostaModel(this.#valor, this.#certa, true)
   }
 
+  static fromJSON(obj: RespostaModel): RespostaModel {
+    return new RespostaModel(obj.valor, obj.certa, obj.revelada)
+  }
+
   toObject() {
     return {
       valor: this.#valor,

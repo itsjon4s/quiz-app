@@ -1,4 +1,4 @@
-import styles from "../styles/Enunciado.module.css"
+import styles from "../styles/Enunciado.module.css";
 
 interface EnunciadoProps {
   texto: string;
@@ -7,9 +7,7 @@ interface EnunciadoProps {
 export default (props: EnunciadoProps) => {
   return (
     <div className={styles.enunciado}>
-      <div className={styles.texto}>
-        {props.texto}
-      </div>
+      <div className={styles.texto}>{props.texto}</div>
     </div>
-  )
-}
+  );
+};
