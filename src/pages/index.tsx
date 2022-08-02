@@ -4,7 +4,7 @@ import Questionario from "../components/Questionario";
 import { useRouter } from "next/router";
 const BASE_URL = "http://localhost:3000/api";
 
-export default () => {
+export default function Quiz() {
   const router = useRouter();
 
   const [idsDasQuestoes, setIdsDasQuestoes] = useState<number[]>([]);

@@ -1,7 +1,7 @@
 import { embaralhar } from "../../../functions/arrays"
 import questoes from "../bancoDeQuestoes"
 
-export default (req, res) => {
+export default function Questionario(req, res) {
 
   const ids = questoes.map(questao => questao.id)
   

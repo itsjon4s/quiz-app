@@ -9,7 +9,7 @@ interface RespostaProps {
   respostaFornecida: (indice: number) => void;
 }
 
-export default (props: RespostaProps) => {
+export default function Resposta(props: RespostaProps) {
   const resposta = props.valor;
   const respostaRevelada = resposta.revelada ? styles.respostaRevelada : "";
   return (

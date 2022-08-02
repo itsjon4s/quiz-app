@@ -8,7 +8,7 @@ interface BotaoProps {
   onClick?: (e: MouseEvent<HTMLElement>) => void;
 }
 
-export default (props: BotaoProps) => {
+export default function Botao(props: BotaoProps) {
   const renderizarBotao = () => {
     return (
       <button className={styles.botao} onClick={props.onClick}>

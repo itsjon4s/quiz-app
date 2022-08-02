@@ -18,7 +18,7 @@ const letras = [
   { valor: 'D', cor: '#006855' }
 ]
 
-export default (props: QuestaoProps) => {
+export default function Questao(props: QuestaoProps) {
   const { valor: questao } = props
 
   const renderizarRespostas = () => questao.respostas.map((resposta, i) => {

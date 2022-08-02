@@ -4,7 +4,7 @@ interface EnunciadoProps {
   texto: string;
 }
 
-export default (props: EnunciadoProps) => {
+export default function Enunciado(props: EnunciadoProps) {
   return (
     <div className={styles.enunciado}>
       <div className={styles.texto}>{props.texto}</div>

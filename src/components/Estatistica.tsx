@@ -7,7 +7,7 @@ interface EstatisticaProps {
   corFonte?: string;
 }
 
-export default (props: EstatisticaProps) => {
+export default function Estatistica(props: EstatisticaProps) {
   return (
     <div className={styles.estatistica}>
       <div
