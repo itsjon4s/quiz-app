@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import QuestaoModel from "../models/questao";
 import Questionario from "../components/Questionario";
 import { useRouter } from "next/router";
-const BASE_URL = "http://localhost:3000/api";
+const BASE_URL = "/api";
 
 export default function Quiz() {
   const router = useRouter();
